@@ -1,0 +1,132 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700");
+
+/*=============== BASE ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("fotos/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*=============== MAIN ===============*/
+.todolist {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 16px;
+  box-shadow: 0 8px 12px hsla(0, 0%, 0%, 0.2);
+}
+
+.todolist h1 {
+  display: flex;
+  color: hsl(0, 0%, 15%);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todolist img {
+  width: 40px;
+  margin-left: 12px;
+}
+
+.todo__adc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(0, 0%, 95%);
+  border-radius: 24px;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.todo__adc input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px;
+}
+
+.todo__adc button {
+  border: none;
+  outline: none;
+  background: #3ba7ff;
+  color: #fff;
+  padding: 16px 48px;
+  border-radius: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 12px 8px 12px 48px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("fotos/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+
+ul li.cheked {
+  color: hsl(0, 0%, 33%);
+  text-decoration: line-through;
+}
+
+ul li.cheked::before {
+  background-image: url("fotos/checked.png");
+}
+
+ul li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: hsl(0, 0%, 33%);
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 600px) {
+  .todolist {
+    width: 400px;
+  }
+  .todo__adc button {
+    width: 60%;
+    padding: 16px 24px;
+  }
+}
