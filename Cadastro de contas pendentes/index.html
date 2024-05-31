@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI Sprint 2 - Cadastro de Contas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="interface">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/images/logo.png" alt="logoYF">
+            </a>
+        </div>
+        <nav class="menu-desktop">
+            <div class="txt-topo-site">
+                <i class="bi bi-bell corner-icon"></i>
+                <i class="bi bi-cash corner-icon"></i>
+                <h2 class="titulo">CONTAS PENDENTES</h2>
+                <ul>
+                    <li><a href="#">Painel de Controle</a></li>
+                    <li><a href="#">Metas</a></li>
+                    <li><a href="#">Contas</a></li>
+                    <li><a href="#">Despesas</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <h3>CADASTRAR CONTAS</h3><br>
+    <div class="tabela">
+        <form id="form">
+            <label for="tipo"><strong>Tipo:</strong></label>
+            <input type="text" id="tipo" placeholder="Digite o tipo da conta" required><br>
+            <label for="vencimento"><strong>Vencimento:</strong></label>
+            <input type="date" id="vencimento" placeholder="Selecione a data de vencimento" required><br>
+            <label for="preco"><strong>Preço:</strong></label>
+            <input type="number" id="preco" step="0.01" pattern="[0-9]+([,\.][0-9]+)?" placeholder="Digite o preço" required>
+            <label for="descricao"><strong>Descrição:</strong></label>
+            <input type="text" id="descricao" placeholder="Digite a descrição" maxlength="200"><br>
+            <button type="submit"><strong>Adicionar Conta</strong></button>
+        </form>
+    </div>
+</div>
+
+<br><br>
+
+<div id="contas"></div>
+
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
