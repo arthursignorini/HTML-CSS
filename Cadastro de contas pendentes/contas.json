@@ -1,0 +1,23 @@
+[
+    {
+        "ID": 1,
+        "TIPO": "Energia",
+        "VENCIMENTO": "2024-06-10",
+        "PRECO": 150.00,
+        "DESCRICAO": "Conta de energia do mês de junho."
+    },
+    {
+        "ID": 2,
+        "TIPO": "Internet",
+        "VENCIMENTO": "2024-06-15",
+        "PRECO": 80.00,
+        "DESCRICAO": "Fatura da internet para o mês de junho."
+    },
+    {
+        "ID": 3,
+        "TIPO": "Aluguel",
+        "VENCIMENTO": "2024-06-25",
+        "PRECO": 1200.00,
+        "DESCRICAO": "Aluguel do mês de junho."
+    }
+]
